@@ -10,6 +10,8 @@ public class ClawnMovment : MonoBehaviour
         _idleMinTime = 1,
         _idleMaxTime = 5;
 
+    private Animator _animator { get {return GetComponent<Animator>(); } }
+
     private Vector2 _goTo;
     private bool _walking;
     private Vector3 _intialScale;
@@ -55,6 +57,7 @@ public class ClawnMovment : MonoBehaviour
         if (deltaMov.x < 0) transform.localScale = new Vector3(_intialScale.x, _intialScale.y, _intialScale.z);
 
         _walking = true;
+        _animator.SetBool("Walk", true);
 
         while (Vector2.Distance(transform.position, pos) > 0.1f)
         {
@@ -64,6 +67,7 @@ public class ClawnMovment : MonoBehaviour
         }
 
         _walking = false;
+        _animator.SetBool("Walk", false);
 
         transform.position = pos;
         timer = Random.Range(_idleMinTime, _idleMaxTime);
