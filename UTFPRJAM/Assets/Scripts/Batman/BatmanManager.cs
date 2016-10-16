@@ -36,7 +36,7 @@ public class BatmanManager : MonoBehaviour
         if (Life.Dead)
         {
             Animation.Die();
+            _gameManager.BatmanDied();
         }
     }
-
 }

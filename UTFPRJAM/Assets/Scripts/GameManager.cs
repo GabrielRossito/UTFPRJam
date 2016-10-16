@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour
     private List<ClawnManager> _clawns = new List<ClawnManager>();
     public List<ClawnManager> Claws { get { return _clawns; } }
 
-    private bool _gameEnded;
+    private bool _gameEnded, _batmanDiedLaunch;
 
     private void Start()
     {
@@ -37,16 +38,16 @@ public class GameManager : MonoBehaviour
     private void LateUpdate()
     {
         if (_gameEnded) return;
-        if (_batmanPosition != null)
-        {
-            for (int i = 0; i < _clawns.Count; i++)
-                _clawns[i].BatmanPosition = _batmanPosition.position;
-        }
+        //if (_batmanPosition != null)
+        //{
+        //    for (int i = 0; i < _clawns.Count; i++)
+        //        _clawns[i].BatmanPosition = _batmanPosition.position;
+        //}
 
-        if(_clawns.Count <= 0)
+        if (_clawns.Count <= 0)
         {
             Debug.Log("Batman Wins");
-            EndGame();
+            SceneManager.LoadScene("sceneEndGameWin");
         }
     }
 
@@ -55,7 +56,7 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < _clawns.Count; i++)
         {
             if (_clawns[i].IsOnScreen)
-                return true;    
+                return true;
         }
         return false;
     }
@@ -64,6 +65,7 @@ public class GameManager : MonoBehaviour
     {
         ClawnManager clawn = Instantiate(_clawPrefab, position + Vector3.back, Quaternion.identity) as ClawnManager;
         clawn.Initialize(this);
+        clawn.BatmanRef = _batmanManager.transform;
         return clawn;
     }
 
@@ -74,18 +76,25 @@ public class GameManager : MonoBehaviour
 
     private void EndTime(float time)
     {
-        if(_clawns.Count > 0)
+        if (_clawns.Count > 0)
         {
-            if(ClawnsOnScreen())
+            if (ClawnsOnScreen())
+            {
                 Debug.Log("Batman Loses");
+                SceneManager.LoadScene("sceneEndGameLose");
+            }
             else
+            {
                 Debug.Log("Batman Wins - Clawns is out of sight");
+                SceneManager.LoadScene("sceneEndGameWin");
+            }
         }
-        EndGame();
     }
 
     public void BatmanDied()
     {
+        if (_batmanDiedLaunch) return;
+        _batmanDiedLaunch = true;
         Invoke("EndGame", 1);
     }
 
@@ -100,5 +109,7 @@ public class GameManager : MonoBehaviour
             Destroy(_clawns[i].gameObject);
         }
         _clawns = new List<ClawnManager>();
+
+        SceneManager.LoadScene("sceneEndGameLose");
     }
 }

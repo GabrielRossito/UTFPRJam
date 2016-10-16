@@ -40,6 +40,6 @@ public class ClawnShootPie : MonoBehaviour
     public void ShootPieSync()
     {
         Pie pie = Instantiate(_piePrefab, transform.position, Quaternion.identity) as Pie;
-        pie.Shoot(_manager.BatmanPosition, PowerStrenght);
+        pie.Shoot(/*_manager.BatmanPosition*/_manager.BatmanRef.position, PowerStrenght);
     }
 }

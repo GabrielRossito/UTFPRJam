@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/sceneEndGameWin.unity
+- path: Assets/Scenes/ClawnTests.unity
   isLoaded: 1
   isActive: 1

@@ -11,15 +11,16 @@ public class ClawnManager : MonoBehaviour
     private ClawnMovment _movement { get { return GetComponent<ClawnMovment>(); } }
     private ClawnShootPie _shooter { get { return GetComponent<ClawnShootPie>(); } }
 
-    public Vector2 BatmanPosition { get; set; }
+    //public Vector2 BatmanPosition { get; set; }
+    public Transform BatmanRef;
     public bool BatmanOnSight
     {
         get
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, BatmanPosition);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, BatmanRef.position);
             if (hit.collider == null)
                 return false;
-            return Vector2.Distance(transform.position, BatmanPosition) <= DistanceOfSight;
+            return Vector2.Distance(transform.position, BatmanRef.position) <= DistanceOfSight;
         }
     }
 
