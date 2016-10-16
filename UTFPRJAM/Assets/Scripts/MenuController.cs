@@ -14,7 +14,7 @@ public class MenuController : MonoBehaviour
     public void LoadPlayScene()
     {
 		Debug.Log("Load Play");
-		Application.LoadLevel("sceneIntro");
+		Application.LoadLevel("ClawnTests");
     }
 
     public void LoadAboutScene()
