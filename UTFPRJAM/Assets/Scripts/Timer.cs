@@ -27,6 +27,11 @@ public class Timer : MonoBehaviour
         onTick.Invoke(_gameDuration);
     }
 
+    public void Stop()
+    {
+        _timerStarted = false;
+    }
+
     private void LateUpdate()
     {
         if(_timerStarted)

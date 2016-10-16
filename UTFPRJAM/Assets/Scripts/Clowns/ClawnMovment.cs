@@ -25,15 +25,15 @@ public class ClawnMovment : MonoBehaviour
         RandomMovement();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Se colidir, procurar outra posição
-        if (collision.gameObject.tag == "Wall")
-        {
-            StopAllCoroutines();
-            RandomMovement();
-        }
-    }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    // Se colidir, procurar outra posição
+    //    if (collision.gameObject.tag == "Wall")
+    //    {
+    //        StopAllCoroutines();
+    //        RandomMovement();
+    //    }
+    //}
 
     private void RandomMovement()
     {

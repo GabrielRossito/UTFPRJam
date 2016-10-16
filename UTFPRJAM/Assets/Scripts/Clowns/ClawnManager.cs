@@ -26,6 +26,14 @@ public class ClawnManager : MonoBehaviour
     private ClawnShootPie _shootPie { get { return GetComponent<ClawnShootPie>(); } }
     public Vector3 Size { get { return _initiazlSize + ((Vector3.one * 0.01f) * _shooter.PowerStrenght); } }
 
+    public bool IsOnScreen
+    {
+        get
+        {
+            return GetComponent<Renderer>().isVisible;
+        }
+    }
+
     private Vector3 _initiazlSize;
 
     private void Update()

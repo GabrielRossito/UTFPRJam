@@ -43,11 +43,21 @@ public class GameManager : MonoBehaviour
                 _clawns[i].BatmanPosition = _batmanPosition.position;
         }
 
-        if(_clawns.Count == 0)
+        if(_clawns.Count <= 0)
         {
             Debug.Log("Batman Wins");
             EndGame();
         }
+    }
+
+    private bool ClawnsOnScreen()
+    {
+        for (int i = 0; i < _clawns.Count; i++)
+        {
+            if (_clawns[i].IsOnScreen)
+                return true;    
+        }
+        return false;
     }
 
     public ClawnManager AddClawn(Vector3 position)
@@ -66,7 +76,10 @@ public class GameManager : MonoBehaviour
     {
         if(_clawns.Count > 0)
         {
-            Debug.Log("Batman Loses");
+            if(ClawnsOnScreen())
+                Debug.Log("Batman Loses");
+            else
+                Debug.Log("Batman Wins - Clawns is out of sight");
         }
         EndGame();
     }
@@ -79,7 +92,7 @@ public class GameManager : MonoBehaviour
     private void EndGame()
     {
         _gameEnded = true;
-
+        _timer.Stop();
         _bozoManager.gameObject.SetActive(false);
         _batmanManager.gameObject.SetActive(false);
         for (int i = 0; i < _clawns.Count; i++)
