@@ -23,9 +23,11 @@ public class Pie : MonoBehaviour
             Die();
     }
 
-    public void Shoot(Vector2 position)
+    public void Shoot(Vector2 position, int aditionalDamage = 0)
     {
         _positionTo = position;
+
+        _damage += aditionalDamage;
 
         Vector3 delta = (Vector3)_positionTo - transform.position;
         delta.Normalize();

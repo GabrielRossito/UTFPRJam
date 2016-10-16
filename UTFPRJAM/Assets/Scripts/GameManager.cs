@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
 
     public ClawnManager AddClawn(Vector3 position)
     {
-        ClawnManager clawn = Instantiate(_clawPrefab, position, Quaternion.identity) as ClawnManager;
+        ClawnManager clawn = Instantiate(_clawPrefab, position + Vector3.back, Quaternion.identity) as ClawnManager;
         clawn.Initialize(this);
         return clawn;
     }
