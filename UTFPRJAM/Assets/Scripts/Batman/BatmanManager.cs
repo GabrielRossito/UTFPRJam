@@ -8,6 +8,7 @@ public class BatmanManager : MonoBehaviour
     public BatmanAnimation Animation { get { return GetComponent<BatmanAnimation>(); } }
     public BatmanPunch Punch { get { return GetComponent<BatmanPunch>(); } }
     public BatmanMovement Movement { get { return GetComponent<BatmanMovement>(); } }
+    public BatmanBatarague Batarangue { get { return GetComponent<BatmanBatarague>(); } }
 
     private GameManager _gameManager;
 
@@ -18,6 +19,7 @@ public class BatmanManager : MonoBehaviour
         _gameManager = manager;
         Punch.Initialize(this);
         Movement.Initialize(this);
+        Batarangue.Initialize(this);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)

@@ -1,9 +1,23 @@
 fileFormatVersion: 2
 guid: 035070982eca394448c9d361c2487ee1
-timeCreated: 1476580531
+timeCreated: 1476617563
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: batmemeThrow_0
+    21300002: batmemeThrow_1
+    21300004: batmemeThrow_2
+    21300006: batmemeThrow_3
+    21300008: batmemeThrow_4
+    21300010: batmemeThrow_5
+    21300012: batmemeThrow_6
+    21300014: batmemeThrow_7
+    21300016: batmemeThrow_8
+    21300018: batmemeThrow_9
+    21300020: batmemeThrow_10
+    21300022: batmemeThrow_11
+    21300024: batmemeThrow_12
+    21300026: batmemeThrow_13
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -38,7 +52,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -51,7 +65,137 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: batmemeThrow_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 288
+        width: 102
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: batmemeThrow_2
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 290
+        width: 149
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: batmemeThrow_3
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 291
+        width: 149
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: batmemeThrow_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 286
+        width: 134
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: batmemeThrow_5
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 288
+        width: 232
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: batmemeThrow_7
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 17
+        width: 232
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: batmemeThrow_8
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 15
+        width: 134
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: batmemeThrow_9
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 20
+        width: 149
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: batmemeThrow_10
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 19
+        width: 149
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: batmemeThrow_12
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 17
+        width: 102
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

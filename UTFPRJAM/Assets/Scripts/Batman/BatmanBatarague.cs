@@ -17,7 +17,7 @@ public class BatmanBatarague : MonoBehaviour
     private float _countReload;
     private bool _shoot;
 
-    public void SetManager(BatmanManager manager)
+    public void Initialize(BatmanManager manager)
     {
         _manager = manager;
     }
@@ -31,9 +31,15 @@ public class BatmanBatarague : MonoBehaviour
 
     private void Shoot()
     {
+        if (_manager.Dead) return;
         if (_shoot) return;
         if (Reloading) return;
         _shoot = true;
+        _manager.Animation.Throw();
+    }
+
+    public void ShootAnimationReleased()
+    {
         Batarangue pie = Instantiate(_bataranguePrefab, transform.position, Quaternion.identity) as Batarangue;
         pie.Shoot(transform, transform.localScale.x < 0 ? -_distanceTravel : _distanceTravel, Reload);
     }

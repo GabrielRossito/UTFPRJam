@@ -46,4 +46,8 @@ public class BatmanAnimation : MonoBehaviour
         }
     }
 
+    public void Throw()
+    {
+        _animator.SetTrigger("Throw");
+    }
 }
