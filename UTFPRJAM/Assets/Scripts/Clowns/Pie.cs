@@ -44,6 +44,7 @@ public class Pie : MonoBehaviour
         splash.transform.rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
         SpriteRenderer splashRenderer = splash.AddComponent<SpriteRenderer>();
         splashRenderer.sprite = _splashes[Random.Range(0, _splashes.Length)];
+        scriptSoundMaster.Instance.PlaySound("torta");
         Destroy(gameObject);
     }
 
@@ -59,7 +60,9 @@ public class Pie : MonoBehaviour
             if (Vector2.Distance(_positionTo, transform.position) <= maxDist / 2)
                 _spriteRenderer.sprite = _pieAlmost;
             if (Vector2.Distance(_positionTo, transform.position) <= maxDist / 3)
+            {
                 _spriteRenderer.sprite = _pieDie;
+            }
             yield return null;
         } while (Vector2.Distance(_positionTo, transform.position) > 0.1f);
 

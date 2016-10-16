@@ -36,6 +36,7 @@ public class BozoPowerCarreta : MonoBehaviour, IBeginDragHandler, IEndDragHandle
     {
         for (int i = 0; i < _power; i++)
             _bozoManager.GameManager.AddClawn(pos);
+        scriptSoundMaster.Instance.PlaySound("risadaPlateia");
     }
 
     public void OnBeginDrag(PointerEventData eventData)

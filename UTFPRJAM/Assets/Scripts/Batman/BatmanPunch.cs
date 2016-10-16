@@ -32,10 +32,12 @@ public class BatmanPunch : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position + direction * 0.5f, direction, _distance);
         if (hit.collider != null)
         {
-            if(hit.collider.gameObject.tag == "Clawn")
+            if (hit.collider.gameObject.tag == "Clawn")
             {
                 hit.collider.gameObject.GetComponent<ClawnManager>().TakeDamage(_power);
             }
+            else
+                scriptSoundMaster.Instance.PlaySound("golpeMiss");
         }
 
         _batmanManager.Animation.Punch();

@@ -1,24 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class scriptSoundMaster : MonoBehaviour {
+public class scriptSoundMaster : MonoBehaviour
+{
+    public static scriptSoundMaster Instance
+    {
+        get { return FindObjectOfType<scriptSoundMaster>(); }
+    }
 
-	public int soundIndex = -1;
-	public AudioClip[] sounds;
+    private AudioSource _source;
+    private AudioSource source
+    {
+        get
+        {
+            if (!_source) _source = GetComponent<AudioSource>();
+            return _source;
+        }
+    }
 
-	private AudioSource source;
+    public void PlaySound(string audio)
+    {
+        AudioClip clip = Resources.Load<AudioClip>("Sounds/SoundEffects/" + audio);
+        source.PlayOneShot(clip, 1);
+    }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (soundIndex >= 0) {
-			source = GetComponent<AudioSource> ();
-			source.PlayOneShot (sounds[soundIndex], 1);
-			soundIndex = -1;
-		}
-	}
 }

@@ -39,7 +39,8 @@ public class ClawnManager : MonoBehaviour
         if (collider.gameObject.tag == "Batarangue")
         {
             Batarangue batarangue = collider.gameObject.GetComponent<Batarangue>();
-            _life.TakeDamage(batarangue.Damage);
+            //_life.TakeDamage(batarangue.Damage);
+            TakeDamage(batarangue.Damage);
         }
     }
 
@@ -69,11 +70,13 @@ public class ClawnManager : MonoBehaviour
 
     public void TakeDamage(int quantity)
     {
+        scriptSoundMaster.Instance.PlaySound("golpeHit");
         _life.TakeDamage(quantity);
     }
 
     private void Die()
     {
+        scriptSoundMaster.Instance.PlaySound("aye");
         GameManager.ClawDied(this);
         Destroy(gameObject);
     }

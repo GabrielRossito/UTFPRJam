@@ -35,6 +35,7 @@ public class BozoPowerStrenght : MonoBehaviour, IBeginDragHandler, IEndDragHandl
     {
         clawn.RaiseDamage(_power);
         StartCoroutine(Reloading());
+        scriptSoundMaster.Instance.PlaySound("magiaBuff");
     }
 
     public void OnBeginDrag(PointerEventData eventData)

@@ -39,6 +39,7 @@ public class BozoPowerHealling : MonoBehaviour, IBeginDragHandler, IEndDragHandl
             if (Vector3.Distance(pos, claw.transform.position) < _effectRadius)
                 claw.GainLife(_power);
         }
+        scriptSoundMaster.Instance.PlaySound("magiaCura");
     }
 
     public void OnBeginDrag(PointerEventData eventData)

@@ -19,6 +19,10 @@ public class BatmanLife : MonoBehaviour
     public void TakeDamage(int quantity)
     {
         Life -= quantity;
+        if(Life > 0)
+            scriptSoundMaster.Instance.PlaySound("aiai");
+        else
+            scriptSoundMaster.Instance.PlaySound("risadaBoso");
     }
 
     private void Update()
