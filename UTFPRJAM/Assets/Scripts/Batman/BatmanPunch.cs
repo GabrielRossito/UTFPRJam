@@ -28,7 +28,8 @@ public class BatmanPunch : MonoBehaviour
 
         if (Recharging) return;
         StartCoroutine(Recharg());
-        RaycastHit2D hit = Physics2D.Raycast(transform.position + transform.right * 0.5f, transform.right, _distance);
+        Vector3 direction = transform.localScale.x > 0 ? transform.right : -transform.right;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position + direction * 0.5f, direction, _distance);
         if (hit.collider != null)
         {
             if(hit.collider.gameObject.tag == "Clawn")
