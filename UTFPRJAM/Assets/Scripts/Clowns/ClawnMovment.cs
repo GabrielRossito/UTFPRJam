@@ -53,8 +53,8 @@ public class ClawnMovment : MonoBehaviour
         Vector2 initialPos = transform.position;
         Vector2 deltaMov = initialPos - pos;
 
-        if (deltaMov.x > 0) transform.localScale = new Vector3(-_intialScale.x, _intialScale.y, _intialScale.z);
-        if (deltaMov.x < 0) transform.localScale = new Vector3(_intialScale.x, _intialScale.y, _intialScale.z);
+        if (deltaMov.x > 0) transform.localScale = new Vector3(-_clawManager.Size.x, _clawManager.Size.y, _clawManager.Size.z);
+        if (deltaMov.x < 0) transform.localScale = new Vector3(_clawManager.Size.x, _clawManager.Size.y, _clawManager.Size.z);
 
         _walking = true;
         _animator.SetBool("Walk", true);

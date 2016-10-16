@@ -9,12 +9,18 @@ public class ClawnShootPie : MonoBehaviour
     private Pie _piePrefab { get { return Resources.Load<Pie>("PiePrefab"); } }
 
     private Animator _animator { get { return GetComponent<Animator>(); } }
+    public int PowerStrenght;
 
     private float _countReload;
 
     public void SetManager(ClawnManager manager)
     {
         _manager = manager;
+    }
+
+    public void RaiseStrenght(int quantity)
+    {
+        PowerStrenght += quantity;
     }
 
     private void Update()
@@ -34,6 +40,6 @@ public class ClawnShootPie : MonoBehaviour
     public void ShootPieSync()
     {
         Pie pie = Instantiate(_piePrefab, transform.position, Quaternion.identity) as Pie;
-        pie.Shoot(_manager.BatmanPosition);
+        pie.Shoot(_manager.BatmanPosition, PowerStrenght);
     }
 }
