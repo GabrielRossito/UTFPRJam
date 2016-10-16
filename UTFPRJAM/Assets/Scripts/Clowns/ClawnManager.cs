@@ -65,6 +65,7 @@ public class ClawnManager : MonoBehaviour
 
     private void Die()
     {
+        GameManager.ClawDied(this);
         Destroy(gameObject);
     }
 }

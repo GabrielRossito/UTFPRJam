@@ -26,16 +26,30 @@ public class GameManager : MonoBehaviour
         _bozoManager.Initialize(this);
         _batmanManager.Initialize(this);
         for (int i = 0; i < _clawnQuantity; i++)
-        { 
-            _clawns.Add(Instantiate(_clawPrefab));
-            _clawns[i].Initialize(this);
+        {
+            _clawns.Add(AddClawn(Vector3.zero));
         }
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (_batmanPosition != null)
-            for (int i = 0; i < _clawnQuantity; i++)
+        {
+            for (int i = 0; i < _clawns.Count; i++)
                 _clawns[i].BatmanPosition = _batmanPosition.position;
+        }
+
+    }
+
+    public ClawnManager AddClawn(Vector3 position)
+    {
+        ClawnManager clawn = Instantiate(_clawPrefab, position, Quaternion.identity) as ClawnManager;
+        clawn.Initialize(this);
+        return clawn;
+    }
+
+    public void ClawDied(ClawnManager clawn)
+    {
+        _clawns.Remove(clawn);
     }
 }
