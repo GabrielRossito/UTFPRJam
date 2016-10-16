@@ -17,6 +17,8 @@ public class BatmanMovement : MonoBehaviour
 
     private void Update()
     {
+        if (_batmanManager.Dead) return;
+
         if (Input.GetAxis("Vertical") > 0)
         {
             transform.position += Vector3.up * _movementSpeed;

@@ -8,6 +8,14 @@ public class BatmanAnimation : MonoBehaviour
 
     private bool _punching;
     private bool _run;
+    private bool _dead;
+
+    public void Die()
+    {
+        if (_dead) return;
+        _dead = true;
+        _animator.SetTrigger("Die");
+    }
 
     public void Punch()
     {

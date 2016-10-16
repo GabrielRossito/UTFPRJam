@@ -11,6 +11,8 @@ public class BatmanManager : MonoBehaviour
 
     private GameManager _gameManager;
 
+    public bool Dead { get { return Life.Dead; } }
+
     public void Initialize(GameManager manager)
     {
         _gameManager = manager;
@@ -31,8 +33,7 @@ public class BatmanManager : MonoBehaviour
     {
         if (Life.Dead)
         {
-            Debug.Log("DEAD"); 
-            Destroy(this.gameObject);
+            Animation.Die();
         }
     }
 

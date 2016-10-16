@@ -24,6 +24,8 @@ public class BatmanPunch : MonoBehaviour
 
     public void Punch()
     {
+        if (_batmanManager.Dead) return;
+
         if (Recharging) return;
         StartCoroutine(Recharg());
         RaycastHit2D hit = Physics2D.Raycast(transform.position + transform.right * 0.5f, transform.right, _distance);
