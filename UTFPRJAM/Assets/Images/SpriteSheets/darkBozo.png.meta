@@ -1,9 +1,24 @@
 fileFormatVersion: 2
 guid: e6191439f7e85e54eb412e19723e25c6
-timeCreated: 1476625289
+timeCreated: 1476640886
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: darkBozo_0
+    21300002: darkBozo_1
+    21300004: darkBozo_2
+    21300006: darkBozo_3
+    21300008: darkBozo_4
+    21300010: darkBozo_5
+    21300012: darkBozo_6
+    21300014: darkBozo_7
+    21300016: darkBozo_8
+    21300018: darkBozo_9
+    21300020: darkBozo_10
+    21300022: darkBozo_11
+    21300024: darkBozo_12
+    21300026: darkBozo_13
+    21300028: darkBozo_14
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,28 +45,223 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: -1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: darkBozo_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 784
+        width: 248
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darkBozo_1
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 784
+        width: 248
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darkBozo_2
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 784
+        width: 248
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darkBozo_3
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 784
+        width: 248
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darkBozo_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 504
+        width: 248
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darkBozo_5
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 504
+        width: 248
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darkBozo_6
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 494
+        width: 248
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darkBozo_7
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 505
+        width: 241
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darkBozo_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 259
+        width: 248
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darkBozo_9
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 260
+        width: 248
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darkBozo_10
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 263
+        width: 248
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darkBozo_11
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 276
+        width: 248
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darkBozo_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 16
+        width: 248
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darkBozo_13
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 16
+        width: 248
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: darkBozo_14
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 16
+        width: 248
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
