@@ -1,9 +1,16 @@
 fileFormatVersion: 2
 guid: aeb571a69664d6846aa51d143e8fba96
-timeCreated: 1476619282
+timeCreated: 1476621335
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: clowIdle_0
+    21300002: clowIdle_1
+    21300004: clowIdle_2
+    21300006: clowIdle_3
+    21300008: clowIdle_4
+    21300010: clowIdle_5
+    21300012: clowIdle_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,28 +37,119 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: -1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: clowIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 143
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clowIdle_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 11
+        width: 143
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clowIdle_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 10
+        width: 143
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clowIdle_3
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 12
+        width: 143
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clowIdle_4
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 10
+        width: 143
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clowIdle_5
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 11
+        width: 143
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clowIdle_6
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 11
+        width: 143
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
