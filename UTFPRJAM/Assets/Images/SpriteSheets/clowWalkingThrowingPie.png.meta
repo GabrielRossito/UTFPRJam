@@ -1,13 +1,24 @@
 fileFormatVersion: 2
 guid: 4cfe6401c0267c44ead8c40dfa933917
-timeCreated: 1476595799
+timeCreated: 1476610837
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: clowWalkingThrowingPie_0
+    21300002: clowWalkingThrowingPie_1
+    21300004: clowWalkingThrowingPie_2
+    21300006: clowWalkingThrowingPie_3
+    21300008: clowWalkingThrowingPie_4
+    21300010: clowWalkingThrowingPie_5
+    21300012: clowWalkingThrowingPie_6
+    21300014: clowWalkingThrowingPie_7
+    21300016: clowWalkingThrowingPie_8
+    21300018: clowWalkingThrowingPie_9
+    21300020: clowWalkingThrowingPie_10
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -30,28 +41,171 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: -1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: clowWalkingThrowingPie_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 268
+        width: 164
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clowWalkingThrowingPie_1
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 270
+        width: 155
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clowWalkingThrowingPie_2
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 288
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clowWalkingThrowingPie_3
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 265
+        width: 135
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clowWalkingThrowingPie_4
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 260
+        width: 144
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clowWalkingThrowingPie_5
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 258
+        width: 157
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clowWalkingThrowingPie_6
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 259
+        width: 161
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clowWalkingThrowingPie_7
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 260
+        width: 144
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clowWalkingThrowingPie_8
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 258
+        width: 149
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clowWalkingThrowingPie_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1264
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: clowWalkingThrowingPie_10
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 0
+        width: 201
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

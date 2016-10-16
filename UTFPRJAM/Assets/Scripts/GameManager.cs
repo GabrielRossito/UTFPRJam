@@ -26,7 +26,10 @@ public class GameManager : MonoBehaviour
         _bozoManager.Initialize(this);
         _batmanManager.Initialize(this);
         for (int i = 0; i < _clawnQuantity; i++)
+        { 
             _clawns.Add(Instantiate(_clawPrefab));
+            _clawns[i].Initialize(this);
+        }
     }
 
     private void Update()

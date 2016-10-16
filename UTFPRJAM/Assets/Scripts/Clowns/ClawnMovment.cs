@@ -11,13 +11,18 @@ public class ClawnMovment : MonoBehaviour
         _idleMaxTime = 5;
 
     private Vector2 _goTo;
+    private bool _walking;
+    private Vector3 _intialScale;
 
-    private void Start()
+    private ClawnManager _clawManager;
+
+    public void Initialize(ClawnManager manager)
     {
+        _clawManager = manager;
+        _intialScale = transform.localScale;
         RandomMovement();
     }
 
-    //UNDONE: UNITY NAO TA CHAMANDO - SEM TEMPO PARA ARRUMAR
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Se colidir, procurar outra posição
@@ -44,12 +49,21 @@ public class ClawnMovment : MonoBehaviour
     {
         float timer = 0;
         Vector2 initialPos = transform.position;
+        Vector2 deltaMov = initialPos - pos;
+
+        if (deltaMov.x > 0) transform.localScale = new Vector3(-_intialScale.x, _intialScale.y, _intialScale.z);
+        if (deltaMov.x < 0) transform.localScale = new Vector3(_intialScale.x, _intialScale.y, _intialScale.z);
+
+        _walking = true;
+
         while (Vector2.Distance(transform.position, pos) > 0.1f)
         {
             transform.position = Vector2.Lerp(initialPos, pos, timer);
             timer += Time.deltaTime * _speed;
             yield return null;
         }
+
+        _walking = false;
 
         transform.position = pos;
         timer = Random.Range(_idleMinTime, _idleMaxTime);
